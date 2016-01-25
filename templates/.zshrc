@@ -49,11 +49,14 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git, gradle, grails, groovy, griffon, python, svn)
+
+#plugins=(brew, git, gradle, grails, groovy, griffon, python)
+plugins=(git)
 
 # User configuration
 
 export PATH=$HOME/bin:/usr/local/bin:$PATH
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -82,3 +85,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+source /Users/lk/Projects/dotfiles.git/sources.sh
+
+[[ -s "/Users/lk/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/lk/.sdkman/bin/sdkman-init.sh"
