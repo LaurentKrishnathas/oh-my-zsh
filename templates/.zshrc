@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=$HOME/Projects/oh-my-zsh
+export ZSH=/Users/lk/Projects/oh-my-zsh.git
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -49,13 +49,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(brew docker docker-compose gem git git-flow git-remote-branch git-prompt gitfast github gitignore go golang gradle grails man mvn nmap pip python rsync  sbt scala spring sublime sudo svn tmux tmuxinator virtualenv  vundle yum zsh_reload)
-plugins+=(zsh-completions virtualenv virtualenvwrapper python)
-autoload -U compinit && compinit
-
-fpath=(/Users/lk/.dotfiles/oh-my-zsh/custom/plugins/zsh-completions/src $fpath)
-
-#pip install virtualenvwrapper fail
+plugins=(git)
 
 # User configuration
 
@@ -88,8 +82,3 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-# Customised from here
-source $HOME/Projects/dotfiles/sources.sh
-#THIS MUST BE AT THE END OF THE FILE FOR GVM TO WORK!!!
-[[ -s "/Users/lk/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/lk/.sdkman/bin/sdkman-init.sh"
